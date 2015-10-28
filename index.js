@@ -1,3 +1,4 @@
+ /// <reference path="./typings/tsd.d.ts" />
 var falcorExpress = require('falcor-express');
 var Router = require('falcor-router');
 
@@ -16,6 +17,7 @@ app.use('/model.json', falcorExpress.dataSourceRoute(function (req, res) {
 		}
 	]);
 }));
+
 
 app.use(express.static(__dirname + '/'));
 
